@@ -11,7 +11,7 @@ public class VThreadDemo {
         final List<Thread> threads = new ArrayList<>();
         final Instant startTime = Instant.now();
         
-        for(var i = 1; i < max; i++){
+        for(var i = 0; i < max; i++){
             final var tid = i;
             final Thread t = Thread.startVirtualThread(() -> {
                 try {
